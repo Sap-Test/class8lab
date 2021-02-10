@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Daily Schedule</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="switch.js"></script>
+   <style>
+       body
+       {
+           color: blueviolet;
+
+       }
+
+       div {
+
+           background-color: blanchedalmond;
+           width: 300px;
+           border: 30px solid;
+           padding: 50px;
+           margin: 20px;
+       }
+
+   </style>
+</head>
+<body>
+
+<div>
+
+        <h1 style="color: cornflowerblue">Daily Schedule</h1>
+
+            <form>
+                <input type="radio" name = "day" id="monday" data-name = "mon" checked>
+                <label for="monday"> Monday</label>
+                <br>
+                <input type="radio" name = "day" id="tuesday" data-name = "tue" >
+                <label for="tuesday"> Tuesday</label>
+                <br>
+                <input type="radio" name = "day" id="wednesday" data-name = "wed" >
+                <label for="wednesday"> Wednesday</label>
+                <br>
+                <input type="radio" name = "day" id="thursday" data-name = "thu">
+                <label for="thursday"> Thursday</label>
+                <br>
+                <input type="radio" name = "day" id="friday" data-name = "fri" >
+                <label for="friday"> Friday</label>
+                <br>
+                <input type="radio" name = "day" id="saturday" data-name = "sat">
+                <label for="saturday"> Saturday</label>
+                <br>
+                <input type="radio" name = "day" id="sunday" data-name = "sun">
+                <label for="sunday"> Sunday</label>
+                <br><br>
+
+                <input type = submit value="Get Schedule">
+                <br><br>
+
+            </form>
+
+            <table>
+                <tr>
+                    <th style="color: darkred">Event:</th>
+                    <th style="color: darkred">Time:</th>
+                </tr>
+
+                <tr>
+                    <td style="color: darkblue">Work</td>
+                    <td id = "workSchedule"></td>
+                </tr>
+
+                <tr>
+                    <td style="color: darkblue">Exercise</td>
+                    <td id = "workoutSchedule"></td>
+                </tr>
+
+
+            </table>
+
+</div>
+
+
+        <!-- Popper and Bootstrap second -->
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
